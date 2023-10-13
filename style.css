@@ -5,4 +5,8 @@ body {
 }
 main {
   display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.choosen-name {
+  font-size: 48px;
 }
