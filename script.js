@@ -151,7 +151,7 @@ for (let i = 0; i < 8; i++) {
   line1 = line1 + "\n ";
 } */
 /* 21 */
-/* let mail1 = "Max.Mustermann@de.bosch.com";
+let mail1 = "Max.Mustermann@de.bosch.com";
 let mail2 = "Jonas.Mueller@gmail.com";
 
 function bosch(mail) {
@@ -164,6 +164,10 @@ function bosch(mail) {
 }
 
 bosch(mail1);
-bosch(mail2); */
+bosch(mail2);
 /* 22 */
-let zeit = 
+/* let zeit = new Date();
+let day = zeit.getDay();
+let month = zeit.getMonth();
+let year = zeit.getFullYear();
+console.log(day + "." + month + "." + year); */
