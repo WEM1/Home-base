@@ -139,14 +139,14 @@ for (counter; counter <= 200; counter += 10) {
   alert(counter);
 } */
 /* 19 */
-let eingabe = document.querySelector(".choosen-name");
-let star = *;
-let line1,line2;
+let input = document.querySelector(".chosenname");
+let star = "*";
+let line1 = "";
 
-for (let i = 1; i < 9; i++) {
-  for (let j = 1; j < 9; j++) {
-    line1 += star;
-   
+for (let i = 0; i < 8; i++) {
+  for (let j = 0; j < 8; j++) {
+    line1 = line1 + star;
+    input.innerText = line1;
   }
-  eingabe.innerHTML = line1;
+  line1 = line1 + "\n ";
 }
