@@ -139,7 +139,7 @@ for (counter; counter <= 200; counter += 10) {
   alert(counter);
 } */
 /* 19 */
-let input = document.querySelector(".chosenname");
+/* let input = document.querySelector(".chosenname");
 let star = "*";
 let line1 = "";
 
@@ -149,4 +149,21 @@ for (let i = 0; i < 8; i++) {
     input.innerText = line1;
   }
   line1 = line1 + "\n ";
+} */
+/* 21 */
+/* let mail1 = "Max.Mustermann@de.bosch.com";
+let mail2 = "Jonas.Mueller@gmail.com";
+
+function bosch(mail) {
+  let boschmail = new RegExp("@de.bosch.com");
+  if (boschmail.test(mail)) {
+    console.log(mail + " ist eine Bosch-Mail");
+  } else {
+    console.log(mail + " ist keine Bosch-Mail");
+  }
 }
+
+bosch(mail1);
+bosch(mail2); */
+/* 22 */
+let zeit = 
