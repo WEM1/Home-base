@@ -151,26 +151,48 @@ for (let i = 0; i < 8; i++) {
   line1 = line1 + "\n ";
 } */
 /* 21 */
-let mail1 = "Max..Mustermann6@de.bosch.com";
-let mail2 = "Jonas.Mueller@gmail.com";
-let mail3 = "Alex.Krueger5.gmx.net";
-
+/* let mailis = document.querySelector(".chosenname");
 function bosch(mail) {
   let boschmail = /^([A-z])+\.([A-z])+\d?@de\.bosch\.com/;
   if (boschmail.test(mail)) {
     alert(mail + " ist eine Bosch-Mail");
+    mailis.innerText = "valid";
   } else {
     alert(mail + " ist keine Bosch-Mail");
+    mailis.innerText = "valid";
   }
 }
-bosch(prompt("Deine Mail"));
+bosch(prompt("Deine Mail")); */
 
 /* console.log(word1[]); */
 
 /* 22 */
-/* let zeit = new Date();
-let day = zeit.getDay();
-let month = zeit.getMonth();
-let year = zeit.getFullYear();
+/* let date = /^(0?[1-9]|[12][0-9]|3[01])[\/.](0?[1-9]|1[012])[\/.]\d{4}$/;
+if (date.test(prompt("Datum"))) {
+  console.log("valid");
+} else {
+  console.log("not valid");
+} */
+/* 23/24 */
+/* const numbers = [100, 100, 100, 100, 100];
+let sum = 0;
+for (let i = 4; i > -1; i--) {
+  sum += +numbers[i];
+  numbers.pop();
+}
+console.log(sum);
+console.log(numbers); */
+/* 25 */
+/* let array = [];
+let counter = 1;
+console.log(array);
+for (let i = 0; i < 3; i++) {
+  array.push([]);
+  for (let j = 0; j < 3; j++) {
+    array[i].push(counter);
+    counter += 1;
+  }
+}
+console.log(array); */
 
-console.log(day + "." + month + "." + year); */
+/* 26 */
