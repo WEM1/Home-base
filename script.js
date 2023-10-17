@@ -196,3 +196,15 @@ for (let i = 0; i < 3; i++) {
 console.log(array); */
 
 /* 26 */
+let total = 0,
+  gradeCounter = 1,
+  classAverage;
+const classCount = +prompt("ClassCount");
+
+while (gradeCounter <= classCount) {
+  grade = +prompt("Grade");
+  total += grade;
+  gradeCounter++;
+  classAverage = total / gradeCounter;
+  console.log(classAverage);
+}
