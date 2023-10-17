@@ -151,36 +151,19 @@ for (let i = 0; i < 8; i++) {
   line1 = line1 + "\n ";
 } */
 /* 21 */
-let mail1 = "Max.Mustermann@de.bosch.com";
+let mail1 = "Max..Mustermann6@de.bosch.com";
 let mail2 = "Jonas.Mueller@gmail.com";
 let mail3 = "Alex.Krueger5.gmx.net";
 
 function bosch(mail) {
-  let boschmail = new RegExp("@de.bosch.com");
+  let boschmail = /^([A-z])+\.([A-z])+\d?@de\.bosch\.com/;
   if (boschmail.test(mail)) {
-    console.log(mail + " ist eine Bosch-Mail");
-    const regexpWords = /\b\w+\b/g;
-    console.log(mail1.match(regexpWords));
-    let word1 = mail1.match(regexpWords);
-
-    const regExpCoordinates = /\D/;
-    let firstletter = word1[0].match(regExpCoordinates);
-    console.log(firstletter);
-
-    const regEx = new RegExp("$[A - Z]");
-    let letter = firstletter[0].match(regEx);
-    console.log(letter);
-    if (letter == null) {
-      console.log(mail + " ist eine Bosch-Mail");
-    } else {
-      console.log(mail + " ist keine Bosch-Mail");
-    }
+    alert(mail + " ist eine Bosch-Mail");
   } else {
-    console.log(mail + " ist keine Bosch-Mail");
+    alert(mail + " ist keine Bosch-Mail");
   }
 }
-bosch(mail1);
-bosch(mail2);
+bosch(prompt("Deine Mail"));
 
 /* console.log(word1[]); */
 
