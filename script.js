@@ -216,7 +216,7 @@ activate.onclick = () => {
       array[i].push(j + 1 + 3 * i);
       changes.innerText = changes.innerText + array[i][j];
     }
-    changes.innerText += "\n";
+    changes.innerText += "\n"; /*  */
   }
   console.log(array);
 };
