@@ -209,7 +209,7 @@ for (let i = 0; i < 3; i++) {
 console.log(array); */
 
 /* 26 */
-let total = 0,
+/* let total = 0,
   gradeCounter = 1,
   classAverage;
 const classCount = +prompt("ClassCount");
@@ -220,7 +220,7 @@ while (gradeCounter <= classCount) {
   gradeCounter++;
   classAverage = total / gradeCounter;
   console.log(classAverage);
-}
+} */
 /* 27 */
 /* let paragraph = document.querySelector(".chosenname");
 paragraph.style.color = "white";
