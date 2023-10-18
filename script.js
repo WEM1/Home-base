@@ -196,17 +196,30 @@ for (let i = 4; i > -1; i--) {
 console.log(sum);
 console.log(numbers); */
 /* 25 */
-/* let array = [];
-let counter = 1;
-console.log(array);
-for (let i = 0; i < 3; i++) {
-  array.push([]);
-  for (let j = 0; j < 3; j++) {
-    array[i].push(counter);
-    counter += 1;
+
+/*   document
+document.querySelector("div").textContent = j + 1 + 3 * i;
+  .querySelector("body")
+  .appendChild(document.createElement("div", { is: "div" })); */
+let activate = document.createElement("button");
+document.querySelector("body").appendChild(activate);
+activate.textContent = "Activate";
+activate.className += "activate";
+
+activate.onclick = () => {
+  let array = [];
+  let changes = document.querySelector(".chosenname");
+  changes.innerText = "";
+  for (let i = 0; i < 3; i++) {
+    array.push([]);
+    for (let j = 0; j < 3; j++) {
+      array[i].push(j + 1 + 3 * i);
+      changes.innerText = changes.innerText + array[i][j];
+    }
+    changes.innerText += "\n";
   }
-}
-console.log(array); */
+  console.log(array);
+};
 
 /* 26 */
 /* let total = 0,
@@ -226,7 +239,7 @@ while (gradeCounter <= classCount) {
 paragraph.style.color = "white";
 paragraph.style.backgroundColor = "blue";
  */
-/* 28 */
+/* 28 /29*/
 /* let paragraph = document.getElementById("chosen");
 
 paragraph.onclick = (x) => {
@@ -237,5 +250,37 @@ paragraph.onmouseover = (x) => {
 };
 paragraph.onmouseleave = (x) => {
   paragraph.innerHTML = "Hello There!";
+}; */
+/* 30 */
+/* function firstFunction() {
+  secondFunction();
+}
+
+function secondFunction() {
+  thirdFunction();
+}
+
+function thirdFunction() {
+  forthFunction();
+}
+
+function forthFunction() {
+  headline.innerHTML = "Headline clicked";
+}
+
+//grab headline Element
+let headline = document.getElementById("chosen");
+
+//add headline click event
+headline.onclick = function () {
+  firstFunction();
 };
+ */
+/* Calculator */
+/* let number1 = document.querySelector(".op-1").value;
+let number2 = document.querySelector(".op-2").value;
+let number3 = document.querySelector(".op-3").value;
+let number4 = document.querySelector(".op-4").value;
+let number5 = document.querySelector(".op-5").value;
+console.log(one);
  */

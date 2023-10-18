@@ -4,3 +4,20 @@
   text-align: center;
   line-height: 0.7;
 } */
+.op {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.activate {
+  padding: 15px 20px;
+  background-color: blueviolet;
+}
+.activate:hover {
+  background-color: orangered;
+}
+div {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}

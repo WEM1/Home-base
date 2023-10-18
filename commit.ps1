@@ -1,4 +1,4 @@
 git add --all
 git status
-git commit -m "hey"
+git commit -m "autoupload"
 git push
