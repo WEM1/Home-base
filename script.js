@@ -150,6 +150,19 @@ for (let i = 0; i < 8; i++) {
   }
   line1 = line1 + "\n ";
 } */
+/* side-project */
+/* let input = document.querySelector(".chosenname");
+let line = " ";
+let columnHeight = prompt("column Height");
+
+for (let i = columnHeight; i > 0; i--) {
+   for (let j = 0; j < i; j++) {
+    line = line + "*";
+    input.innerText = line;
+  }
+  line = line + "\n";
+} */
+
 /* 21 */
 /* let mailis = document.querySelector(".chosenname");
 function bosch(mail) {
@@ -208,3 +221,21 @@ while (gradeCounter <= classCount) {
   classAverage = total / gradeCounter;
   console.log(classAverage);
 }
+/* 27 */
+/* let paragraph = document.querySelector(".chosenname");
+paragraph.style.color = "white";
+paragraph.style.backgroundColor = "blue";
+ */
+/* 28 */
+/* let paragraph = document.getElementById("chosen");
+
+paragraph.onclick = (x) => {
+  paragraph.style.backgroundColor = "blue";
+};
+paragraph.onmouseover = (x) => {
+  paragraph.innerHTML = "In Position";
+};
+paragraph.onmouseleave = (x) => {
+  paragraph.innerHTML = "Hello There!";
+};
+ */
