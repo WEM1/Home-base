@@ -195,11 +195,9 @@ for (let i = 4; i > -1; i--) {
 }
 console.log(sum);
 console.log(numbers); */
-/* 25 */
+/* 25 ++++++ */
 
-/*   document
- */
-let activate = document.createElement("button");
+/* let activate = document.createElement("button");
 document.querySelector("header").appendChild(activate);
 activate.textContent = "Activate";
 activate.className += "activate";
@@ -207,22 +205,21 @@ activate.className += "activate";
 activate.onclick = () => {
   let array = [];
   let changes = document.querySelector(".chosenname");
-  changes.innerText = "";
+  changes.innerText = "There you go!";
   for (let i = 0; i < 3; i++) {
     array.push([]);
     for (let j = 0; j < 3; j++) {
       array[i].push(j + 1 + 3 * i);
-      changes.innerText = changes.innerText + array[i][j];
       let element = document.createElement("div");
 
       document.querySelector("main").appendChild(element);
-      element.className = j + 1 + 3 * i;
-      element.innerText = j + 1 + 3 * i;
+      element.className = array[i][j];
+      element.innerText = array[i][j];
     }
     changes.innerText += "\n";
   }
   console.log(array);
-};
+}; */
 
 /* 26 */
 /* let total = 0,
