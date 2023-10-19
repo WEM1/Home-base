@@ -197,7 +197,7 @@ console.log(sum);
 console.log(numbers); */
 /* 25 ++++++ */
 
-let activate = document.createElement("button");
+/* let activate = document.createElement("button");
 document.querySelector("header").appendChild(activate);
 activate.textContent = "Activate";
 activate.className += "activate";
@@ -217,7 +217,6 @@ activate.onclick = () => {
     zahlenArray.push([]);
     for (let j = 0; j < 3; j++) {
       zahlenArray[i].push(j + 1 + 3 * i);
-      
     }
   }
   console.log(zahlenArray);
@@ -225,18 +224,16 @@ activate.onclick = () => {
 
 initiateBox.onclick = () => {
   let element = document.createElement("div");
-  document.querySelectorAll(zahlenArray).forEach(Number) = () => {
-    document.body.appendChild(element);
-    
-  }
+  console.log(zahlenArray.querySelectorAll("1"));
+
   element.className = `container${zahlenArray}`;
   element.innerText = zahlenArray;
-};
+};  */
 
 /* document.querySelector("main").appendChild(element);
 element.className = `container${zahlenArray[i][j]}`;
 element.innerText = zahlenArray[i][j];
- */
+
 /* 26 */
 /* let total = 0,
   gradeCounter = 1,
@@ -294,8 +291,7 @@ headline.onclick = function () {
  */
 /* Calculator */
 
-/* 
-let activate = document.createElement("button");
+/* let activate = document.createElement("button");
 document.querySelector("header").appendChild(activate);
 activate.textContent = "Activate";
 activate.className += "activate";
@@ -305,10 +301,18 @@ let display = document.createElement("input");
 document.querySelector("main").appendChild(display);
 display.className += "display-calculator";
 console.log(calculator);
-let operators = ["+", "-", "*", "^", "/", "%", "="];
+let operators = ["+", "-", "*", 0, "/", "%", "="];
+
+function addElement(operator1, operator2) {
+  let element = document.createElement("button");
+
+  document.querySelector("main").appendChild(element);
+  element.className = `calculate-numbers${calculator[operator1][operator2]}`;
+  element.innerText = calculator[operator1][operator2];
+}
 
 activate.onclick = () => {
-  let changes = document.querySelector(".chosenname");
+  let changes = document.querySelector(".chosen");
   activate.remove();
   changes.innerText = "There you go!";
   for (let i = 0; i < 4; i++) {
@@ -316,30 +320,114 @@ activate.onclick = () => {
     if (i < 3) {
       for (let j = 0; j < 3; j++) {
         calculator[i].push(j + 1 + 3 * i);
-        let element = document.createElement("button");
-
-        document.querySelector("main").appendChild(element);
-        element.className = `calculate-numbers${calculator[i][j]}`;
-        element.innerText = calculator[i][j];
+        addElement(i, j);
       }
       for (let l = 3; l < 4; l++) {
         calculator[i].push(operators[i]);
         let element = document.createElement("button");
-
-        document.querySelector("main").appendChild(element);
-        element.className = `calculate-op${calculator[i][l]}`;
-        element.innerText = calculator[i][l];
+        addElement(i, l);
       }
     } else {
       for (let m = 0; m < 4; m++) {
         calculator[i].push(operators[m + 3]);
-        let element = document.createElement("button");
-
-        document.querySelector("main").appendChild(element);
-        (element.className = "button"), `calculate-op2${calculator[i][m]}`;
-        element.innerText = calculator[i][m];
+        addElement(i, m);
       }
     }
   }
   console.log(calculator);
+};
+calculator[1].onclick = () => {
+  console.log("1");
 }; */
+
+let output = document.querySelector(".output");
+let number0 = document.querySelector(".calculate-numbers0");
+let number1 = document.querySelector(".calculate-numbers1");
+let number2 = document.querySelector(".calculate-numbers2");
+let number3 = document.querySelector(".calculate-numbers3");
+let number4 = document.querySelector(".calculate-numbers4");
+let number5 = document.querySelector(".calculate-numbers5");
+let number6 = document.querySelector(".calculate-numbers6");
+let number7 = document.querySelector(".calculate-numbers7");
+let number8 = document.querySelector(".calculate-numbers8");
+let number9 = document.querySelector(".calculate-numbers9");
+let operatorC = document.querySelector(".calculate-C");
+let operatorPlus = document.querySelector(".calculate-P");
+let operatorMinus = document.querySelector(".calculate-M");
+let operatorMal = document.querySelector(".calculate-Mal");
+let operatorDiv = document.querySelector(".calculate-Div");
+let operatorIs = document.querySelector(".calculate-Is");
+
+let value1 = "";
+let result = 0;
+
+console.log(value1);
+number0.onclick = () => {
+  output.value += number0.innerText;
+  alert("asd");
+  console.log(number0);
+};
+number1.onclick = () => {
+  output.value += number1.innerText;
+};
+number2.onclick = () => {
+  output.value += number2.innerText;
+};
+number3.onclick = () => {
+  output.value += number3.innerText;
+};
+number4.onclick = () => {
+  output.value += number4.innerText;
+};
+number5.onclick = () => {
+  output.value += number5.innerText;
+};
+number6.onclick = () => {
+  output.value += number6.innerText;
+};
+number7.onclick = () => {
+  output.value += number7.innerText;
+};
+number8.onclick = () => {
+  output.value += number8.innerText;
+};
+number9.onclick = () => {
+  output.value += number9.innerText;
+};
+operatorC.onclick = () => {
+  output.value = "";
+  operator = "";
+};
+operatorPlus.onclick = () => {
+  operator += output.value;
+  operator += operatorPlus.innerText;
+  output.value = "";
+  console.log(operator);
+};
+operatorMinus.onclick = () => {
+  operator += output.value;
+  operator += operatorMinus.innerText;
+  output.value = "";
+  console.log(operator);
+};
+operatorMal.onclick = () => {
+  operator += output.value;
+  operator += operatorMal.innerText;
+  output.value = "";
+  console.log(operator);
+};
+operatorDiv.onclick = () => {
+  operator += output.value;
+  operator += operatorDiv.innerText;
+  output.value = "";
+  console.log(operator);
+};
+operatorIs.onclick = () => {
+  operator += output.value;
+  console.log(operator);
+
+  result.innerText = +operator.value;
+  output.value = "";
+
+  output.value = result;
+};
