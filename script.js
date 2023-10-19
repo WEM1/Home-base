@@ -1,6 +1,3 @@
-
-
-{ name: keyName, element: }
 let activate = document.createElement("button");
 document.querySelector("header").appendChild(activate);
 activate.textContent = "Activate";
@@ -14,7 +11,7 @@ console.log(calculator);
 let operators = ["+", "-", "*", "^", "/", "%", "="];
 
 activate.onclick = () => {
-  let changes = document.querySelector(".chosenname");
+  let changes = document.querySelector(".chosen");
   activate.remove();
   changes.innerText = "There you go!";
   for (let i = 0; i < 4; i++) {
@@ -49,4 +46,3 @@ activate.onclick = () => {
   }
   console.log(calculator);
 };
-
