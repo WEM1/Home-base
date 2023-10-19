@@ -198,11 +198,9 @@ console.log(numbers); */
 /* 25 */
 
 /*   document
-document.querySelector("div").textContent = j + 1 + 3 * i;
-  .querySelector("body")
-  .appendChild(document.createElement("div", { is: "div" })); */
+ */
 let activate = document.createElement("button");
-document.querySelector("body").appendChild(activate);
+document.querySelector("header").appendChild(activate);
 activate.textContent = "Activate";
 activate.className += "activate";
 
@@ -215,6 +213,11 @@ activate.onclick = () => {
     for (let j = 0; j < 3; j++) {
       array[i].push(j + 1 + 3 * i);
       changes.innerText = changes.innerText + array[i][j];
+      let element = document.createElement("div");
+
+      document.querySelector("main").appendChild(element);
+      element.className = j + 1 + 3 * i;
+      element.innerText = j + 1 + 3 * i;
     }
     changes.innerText += "\n";
   }
