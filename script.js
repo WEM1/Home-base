@@ -205,6 +205,7 @@ activate.className += "activate";
 activate.onclick = () => {
   let array = [];
   let changes = document.querySelector(".chosenname");
+  activate.remove();
   changes.innerText = "There you go!";
   for (let i = 0; i < 3; i++) {
     array.push([]);
@@ -213,7 +214,7 @@ activate.onclick = () => {
       let element = document.createElement("div");
 
       document.querySelector("main").appendChild(element);
-      element.className = array[i][j];
+      element.className = `container${array[i][j]}`;
       element.innerText = array[i][j];
     }
     changes.innerText += "\n";
@@ -277,10 +278,27 @@ headline.onclick = function () {
 };
  */
 /* Calculator */
-/* let number1 = document.querySelector(".op-1").value;
-let number2 = document.querySelector(".op-2").value;
-let number3 = document.querySelector(".op-3").value;
-let number4 = document.querySelector(".op-4").value;
-let number5 = document.querySelector(".op-5").value;
-console.log(one);
- */
+let activate = document.createElement("button");
+document.querySelector("header").appendChild(activate);
+activate.textContent = "Activate";
+activate.className += "activate";
+
+activate.onclick = () => {
+  let calculator = [];
+  let changes = document.querySelector(".chosenname");
+  activate.remove();
+  changes.innerText = "There you go!";
+  for (let i = 0; i < 3; i++) {
+    calculator.push([]);
+    for (let j = 0; j < 3; j++) {
+      calculator[i].push(j + 1 + 3 * i);
+      let element = document.createElement("div");
+
+      document.querySelector("main").appendChild(element);
+      element.className = `container${calculator[i][j]}`;
+      element.innerText = calculator[i][j];
+    }
+    changes.innerText += "\n";
+  }
+  console.log(calculator);
+};
