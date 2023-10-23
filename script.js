@@ -339,95 +339,20 @@ activate.onclick = () => {
 calculator[1].onclick = () => {
   console.log("1");
 }; */
+let output1 = document.querySelector(".output1");
+let output2 = document.querySelector(".output2");
+document.querySelectorAll(".calculate-numbers").forEach((element) => {
+  element.addEventListener("click", () => {
+    output2.value += element.innerText;
 
-let output = document.querySelector(".output");
-let number0 = document.querySelector(".calculate-numbers0");
-let number1 = document.querySelector(".calculate-numbers1");
-let number2 = document.querySelector(".calculate-numbers2");
-let number3 = document.querySelector(".calculate-numbers3");
-let number4 = document.querySelector(".calculate-numbers4");
-let number5 = document.querySelector(".calculate-numbers5");
-let number6 = document.querySelector(".calculate-numbers6");
-let number7 = document.querySelector(".calculate-numbers7");
-let number8 = document.querySelector(".calculate-numbers8");
-let number9 = document.querySelector(".calculate-numbers9");
-let operatorC = document.querySelector(".calculate-C");
-let operatorPlus = document.querySelector(".calculate-P");
-let operatorMinus = document.querySelector(".calculate-M");
-let operatorMal = document.querySelector(".calculate-Mal");
-let operatorDiv = document.querySelector(".calculate-Div");
-let operatorIs = document.querySelector(".calculate-Is");
-
-let value1 = "";
-let result = 0;
-
-console.log(value1);
-number0.onclick = () => {
-  output.value += number0.innerText;
-  alert("asd");
-  console.log(number0);
-};
-number1.onclick = () => {
-  output.value += number1.innerText;
-};
-number2.onclick = () => {
-  output.value += number2.innerText;
-};
-number3.onclick = () => {
-  output.value += number3.innerText;
-};
-number4.onclick = () => {
-  output.value += number4.innerText;
-};
-number5.onclick = () => {
-  output.value += number5.innerText;
-};
-number6.onclick = () => {
-  output.value += number6.innerText;
-};
-number7.onclick = () => {
-  output.value += number7.innerText;
-};
-number8.onclick = () => {
-  output.value += number8.innerText;
-};
-number9.onclick = () => {
-  output.value += number9.innerText;
-};
-operatorC.onclick = () => {
-  output.value = "";
-  operator = "";
-};
-operatorPlus.onclick = () => {
-  operator += output.value;
-  operator += operatorPlus.innerText;
-  output.value = "";
-  console.log(operator);
-};
-operatorMinus.onclick = () => {
-  operator += output.value;
-  operator += operatorMinus.innerText;
-  output.value = "";
-  console.log(operator);
-};
-operatorMal.onclick = () => {
-  operator += output.value;
-  operator += operatorMal.innerText;
-  output.value = "";
-  console.log(operator);
-};
-operatorDiv.onclick = () => {
-  operator += output.value;
-  operator += operatorDiv.innerText;
-  output.value = "";
-  console.log(operator);
-};
-operatorIs.onclick = () => {
-  operator += output.value;
-  console.log(operator);
-
-  result.innerText = +operator.value;
-  output.value = "";
-
-  output.value = result;
-};
+    console.log(element.innerHTML);
+  });
+});
+document.querySelector(".calculate-Is").addEventListener("click", () => {
+  output1.value = eval(output2.value);
+  output2.value = "";
+});
+document.querySelector(".calculate-C").addEventListener("click", () => {
+  output1.value = "";
+  output2.value = "";
+});
