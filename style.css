@@ -1,5 +1,36 @@
+body {
+  width: 200px;
+  margin: auto;
+}
 main {
   display: grid;
+  grid-area: a a a;
   grid-template-columns: 60px 60px 60px;
   grid-template-rows: 60px 60px 60px;
+  position: relative;
+}
+p {
+  text-align: center;
+}
+button {
+  border-radius: 7%;
+  background-color: whitesmoke;
+}
+div {
+  margin-top: 50px;
+  width: 150px;
+  height: 30px;
+  background-color: blue;
+}
+.endscreen {
+  display: flex;
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+
+  background-color: rgba(128, 128, 128, 0.849);
+  filter: blur(5px);
+  margin-top: 0;
 }
