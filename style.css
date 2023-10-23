@@ -1,34 +1,5 @@
-.op {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-}
-.activate,
-.initiateBox {
-  padding: 15px 20px;
-  background-color: blueviolet;
-}
-.activate:hover,
-.initiateBox:hover {
-  background-color: orangered;
-}
-
 main {
   display: grid;
-  grid-template-columns: 60px 60px 60px 60px;
-  grid-template-rows: 30px 30px 60px 60px 60px 60px;
-}
-
-.display-calculator {
-  grid-column: span 4;
-}
-.output1,
-.output2 {
-  grid-column: span 4;
-}
-.output1 {
-  border-bottom: none;
-}
-.output2 {
-  border-top: none;
+  grid-template-columns: 60px 60px 60px;
+  grid-template-rows: 60px 60px 60px;
 }
