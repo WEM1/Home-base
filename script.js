@@ -91,5 +91,9 @@ function haswon() {
     document
       .querySelectorAll("button")
       .forEach((element) => (element.innerText = null));
+  } else if (document.querySelectorAll(".playing").innerText) {
   }
 }
+let a = 25;
+console.log(a < 26 ? 10 : 30);
+console.log(a);
